@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        mobile: "375px",
+        desktop: "1440px",
+      },
       colors: {
         orange_primary: "#e9ab53",
         red_primary: "#f15e50",
