@@ -34,17 +34,20 @@ export const newNews = [
   {
     id: 1,
     title: "Hydrogen VS Electric Cars",
+    hasBorder: true,
     description: "Will hydrogen-fueled cars ever catch up to EVs?",
   },
   {
     id: 2,
     title: "The Downsides of AI Artistry",
+    hasBorder: true,
     description:
       "What are the possible adverse effects of on-demand AI image generation?",
   },
   {
     id: 3,
     title: "Reviving Retro PCs",
+    hasBorder: false,
     description: "What happens when old PCs are given modern upgrades?",
   },
 ];

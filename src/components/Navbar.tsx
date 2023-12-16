@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import logo from "../assets/logo.svg"
 import hamburger from "../assets/icon-menu.svg"
-import closeIcon from "../assets/icon-menu-close.svg"
 import { navLinks } from '../constants'
 import SideBar from './SideBar'
 
@@ -9,10 +8,9 @@ const Navbar: React.FC = () => {
     const [toggle, setToggle] = useState<boolean>(false);
     const [active, setActive] = useState<number>(0)
 
-    console.log("active", active)
+
     return (
         <div className='flex flex-col'>
-
             <nav className='flex justify-between items-center w-full'>
                 <div className='w-1/5'>
                     <img src={logo} alt="Logo" width={"54px"} height={"54px"} />
@@ -31,20 +29,16 @@ const Navbar: React.FC = () => {
 
                 {/* hambuger */}
                 <div onClick={() => setToggle((prev) => !prev)} className='desktop:hidden w-40 h-16   mobile:flex  cursor-pointer justify-end items-center focus:outline-none'>
-                    <img src={toggle ? closeIcon : hamburger} alt="menu" width={"40px"} height={"17px"} />
+                    <img src={hamburger} alt="menu" width={"40px"} height={"17px"} />
                 </div>
             </nav>
 
-
-
-
-
-
-
-            {/* sidebar */}
             {toggle ? (
-                <SideBar />
+                <SideBar
+                    setToggle={setToggle}
+                />
             ) : null}
+
         </div>
     )
 }
