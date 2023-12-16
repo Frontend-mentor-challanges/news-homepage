@@ -1,10 +1,13 @@
+import Navbar from "./components/Navbar"
+
 function App() {
 
 
   return (
-    <h1 className="text-3xl font-bold font-inter">
-      Hello world!
-    </h1>
+    <div className="bg-off_white h-[100dvh] desktop:p-10 mobile:p-5 ">
+      <Navbar />
+    </div>
+
   )
 }
 
