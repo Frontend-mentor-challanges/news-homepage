@@ -9,7 +9,7 @@ export const navLinks = [
   { id: 4, title: "Categories" },
 ];
 
-export const news = [
+export const blogs = [
   {
     id: 1,
     newsImg: retroPc,

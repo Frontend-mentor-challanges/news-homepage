@@ -5,7 +5,7 @@ import HeroSection from './HeroSection'
 const MainNews: React.FC = () => {
     return (
         <>
-            <div className='border border-purple-900 grid grid-cols-12 gap-9'>
+            <div className='grid grid-cols-12 gap-9'>
                 <HeroSection />
                 <LatestNews />
             </div>
